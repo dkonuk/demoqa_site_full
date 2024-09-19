@@ -12,6 +12,7 @@ public class PageManager {
     public AlertsWindowsPage alertsWindowsPage;
     public AlertsPage alertsPage;
     public FramesPage framesPage;
+    public MenuPage menuPage;
 
     public PageManager() {
         DriverFactory.initDriver();
@@ -23,6 +24,7 @@ public class PageManager {
         alertsWindowsPage = PageFactory.buildAlertsWindowsPage();
         alertsPage = PageFactory.buildAlertsPage();
         framesPage = PageFactory.buildFramesPage();
+        menuPage = PageFactory.buildMenuPage();
 
     }
 }

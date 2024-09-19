@@ -8,6 +8,7 @@ import pages.FormPage;
 import pages.AlertsWindowsPage;
 import pages.AlertsPage;
 import pages.FramesPage;
+import pages.MenuPage;
 public class PageFactory {
 
     public static ElementsPage buildElementsPage() {
@@ -33,6 +34,9 @@ public class PageFactory {
     }
     public static FramesPage buildFramesPage() {
         return new FramesPage("/frames");
+    }
+    public static MenuPage buildMenuPage() {
+        return new MenuPage("/menu");
     }
 
 }
