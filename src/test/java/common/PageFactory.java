@@ -9,6 +9,8 @@ import pages.AlertsWindowsPage;
 import pages.AlertsPage;
 import pages.FramesPage;
 import pages.MenuPage;
+import pages.SelectMenuPage;
+
 public class PageFactory {
 
     public static ElementsPage buildElementsPage() {
@@ -37,6 +39,9 @@ public class PageFactory {
     }
     public static MenuPage buildMenuPage() {
         return new MenuPage("/menu");
+    }
+    public static SelectMenuPage buildSelectMenuPage() {
+        return new SelectMenuPage("/select-menu");
     }
 
 }
