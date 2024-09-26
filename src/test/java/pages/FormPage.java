@@ -21,12 +21,15 @@ public class FormPage extends BasePage {
     public SelenideElement hobbiesField2 = $("[id=\"hobbies-checkbox-2\"]");
     public SelenideElement hobbiesField3 = $("[id=\"hobbies-checkbox-3\"]");
     public SelenideElement currentAddressField = $("#currentAddress");
-    public SelenideElement stateField = $x("//div[contains(text(),'Select State')]");
+    //public SelenideElement stateField = $x("//div[contains(text(),'Select State')]");
+    public SelenideElement stateField = $("[id=\"state\"]");
     public SelenideElement cityField = $("#city");
     public SelenideElement submitButton = $("#submit");
     public SelenideElement studentName = $x("//tbody/tr[1]/td[2]");
     public SelenideElement subjectsCheck = $x("//tbody/tr[6]/td[2]");
     public SelenideElement hobbiesCheck = $x("//tbody/tr[7]/td[2]");
+    public SelenideElement stateCheck = $x("//tbody/tr[8]/td[2]");
+    public SelenideElement cityCheck = $x("//tbody/tr[9]/td[2]");
 
 
 
