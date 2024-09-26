@@ -1,15 +1,6 @@
 package common;
 
-import pages.CheckBoxPage;
-import pages.ElementsPage;
-import pages.ElementsTextBoxPage;
-import pages.RadioButtonPage;
-import pages.FormPage;
-import pages.AlertsWindowsPage;
-import pages.AlertsPage;
-import pages.FramesPage;
-import pages.MenuPage;
-import pages.SelectMenuPage;
+import pages.*;
 
 public class PageFactory {
 
@@ -42,6 +33,9 @@ public class PageFactory {
     }
     public static SelectMenuPage buildSelectMenuPage() {
         return new SelectMenuPage("/select-menu");
+    }
+    public static SortablePage buildSortablePage(){
+        return new SortablePage("/sortable");
     }
 
 }
