@@ -21,7 +21,6 @@ public class FormPage extends BasePage {
     public SelenideElement hobbiesField2 = $("[id=\"hobbies-checkbox-2\"]");
     public SelenideElement hobbiesField3 = $("[id=\"hobbies-checkbox-3\"]");
     public SelenideElement currentAddressField = $("#currentAddress");
-    //public SelenideElement stateField = $x("//div[contains(text(),'Select State')]");
     public SelenideElement stateField = $("[id=\"state\"]");
     public SelenideElement cityField = $("#city");
     public SelenideElement submitButton = $("#submit");

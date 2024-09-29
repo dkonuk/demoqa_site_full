@@ -11,6 +11,10 @@ import com.codeborne.selenide.Selenide;
 import static com.codeborne.selenide.Condition.visible;
 import static org.assertj.core.api.Assertions.as;
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.openqa.selenium.Keys.COMMAND;
+import java.awt.*;
+import java.awt.event.InputEvent;
+import java.awt.event.KeyEvent;
 
 public class FormPageTest extends BaseTest {
     @BeforeMethod
@@ -19,7 +23,7 @@ public class FormPageTest extends BaseTest {
     }
 
     @Test
-    public void formPageTest() throws InterruptedException {
+    public void formPageTest() throws InterruptedException, AWTException {
         pageManager.formPage.firstNameField.setValue("John");
         pageManager.formPage.lastNameField.setValue("Doe");
         pageManager.formPage.emailField.setValue("n5PpM@example.com");
@@ -27,6 +31,7 @@ public class FormPageTest extends BaseTest {
         pageManager.formPage.femaleRadioButton.click();
         pageManager.formPage.otherRadioButton.click();
         pageManager.formPage.phoneNumberField.setValue("1234567890");
+        pageManager.formPage.dateOfBirthField.click();
         Actions actions = Selenide.actions();
         actions.scrollToElement(pageManager.formPage.subjectsField).perform();
         actions.click(pageManager.formPage.subjectsField).pause(500).sendKeys("English").pause(500).sendKeys(Keys.ENTER).perform();
