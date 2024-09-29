@@ -5,16 +5,10 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.annotations.Test;
 import org.testng.annotations.BeforeMethod;
-import com.codeborne.selenide.commands.PressEnter;
 import com.codeborne.selenide.Selenide;
 
 import static com.codeborne.selenide.Condition.visible;
-import static org.assertj.core.api.Assertions.as;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.openqa.selenium.Keys.COMMAND;
-import java.awt.*;
-import java.awt.event.InputEvent;
-import java.awt.event.KeyEvent;
 
 public class FormPageTest extends BaseTest {
     @BeforeMethod
@@ -23,7 +17,7 @@ public class FormPageTest extends BaseTest {
     }
 
     @Test
-    public void formPageTest() throws InterruptedException, AWTException {
+    public void formPageTest() {
         pageManager.formPage.firstNameField.setValue("John");
         pageManager.formPage.lastNameField.setValue("Doe");
         pageManager.formPage.emailField.setValue("n5PpM@example.com");

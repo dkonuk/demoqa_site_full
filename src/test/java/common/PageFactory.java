@@ -37,5 +37,8 @@ public class PageFactory {
     public static SortablePage buildSortablePage(){
         return new SortablePage("/sortable");
     }
+    public static SelectablePage buildSelectablePage(){
+        return new SelectablePage("/selectable");
+    }
 
 }

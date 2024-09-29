@@ -15,6 +15,7 @@ public class PageManager {
     public MenuPage menuPage;
     public SelectMenuPage selectMenuPage;
     public SortablePage sortablePage;
+    public SelectablePage selectablePage;
 
     public PageManager() {
         DriverFactory.initDriver();
@@ -29,6 +30,7 @@ public class PageManager {
         menuPage = PageFactory.buildMenuPage();
         selectMenuPage = PageFactory.buildSelectMenuPage();
         sortablePage = PageFactory.buildSortablePage();
+        selectablePage = PageFactory.buildSelectablePage();
 
     }
 }
