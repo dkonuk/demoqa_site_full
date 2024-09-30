@@ -33,9 +33,12 @@ public class BookStorePageTest extends BaseTest {
             pageManager.bookStorePage.rowsPerPage.selectOption(i);
         }
         pageManager.bookStorePage.rowsPerPage.selectOption(1);
-        actions.pause(1000).perform();
+        assertThat(pageManager.bookStorePage.rowPerPageValue.getValue()).isEqualTo("10");
 
-
+    }
+    @AfterMethod
+    public void after(){
+        pageManager.bookStorePage.logoutButton.click();
     }
 
 }
