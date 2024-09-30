@@ -6,7 +6,7 @@ import java.io.IOException;
 import java.util.Properties;
 
 public class PropertyManager {
-    Properties property;
+    static Properties property;
 
     public PropertyManager() {
         Properties props = new Properties();
@@ -19,7 +19,7 @@ public class PropertyManager {
         }
     }
 
-    public String getProperty(String key) {
+    public static String getProperty(String key) {
         Properties props = property;
         if (props != null) {
             return props.getProperty(key);

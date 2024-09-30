@@ -40,5 +40,8 @@ public class PageFactory {
     public static SelectablePage buildSelectablePage(){
         return new SelectablePage("/selectable");
     }
+    public static BookStorePage buildBookStorePage(){
+        return new BookStorePage("/login");
+    }
 
 }
